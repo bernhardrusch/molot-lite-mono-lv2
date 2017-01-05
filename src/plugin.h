@@ -9,7 +9,7 @@ typedef void * LV2_Handle;
 #include <lv2.h>
 
 // URI strings
-#define URI_STRING "br:molot_lite_mono"
+#define URI_STRING "http://github.com/bernhardrusch/molot-lite-mono-lv2"
 #endif
 
 // Port indexes
