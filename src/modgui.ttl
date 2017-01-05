@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://github.com/bernhardrusch/molot-lite-mono-lv2>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui>;
+        modgui:iconTemplate <modgui/icon-molot-lite-mono.html>;
+        modgui:stylesheet <modgui/stylesheet-molot-lite-mono.css>;
+        modgui:screenshot <modgui/screenshot-molot-lite-mono.png>;
+        modgui:thumbnail <modgui/thumbnail-molot-lite-mono.png>;
+        modgui:brand "BRUSH";
+        modgui:label "молот Lite";
+        modgui:model "boxy";
+        modgui:panel "5-knobs";
+        modgui:color "racing";
+        modgui:knob "black";
+        modgui:port [
+            lv2:index 0;
+            lv2:symbol "THRESHOLD";
+            lv2:name "Threshold";
+        ], [
+            lv2:index 1;
+            lv2:symbol "ATTACK";
+            lv2:name "Attack";
+        ], [
+            lv2:index 2;
+            lv2:symbol "RELEASE";
+            lv2:name "Release";
+        ], [
+            lv2:index 3;
+            lv2:symbol "RATIO" ;
+            lv2:name "Ratio" ;
+        ], [
+            lv2:index 4;
+            lv2:symbol "MAKEUP";
+            lv2:name "Makeup";
+        ];
+    ] .
